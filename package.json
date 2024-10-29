@@ -1,6 +1,6 @@
 {
   "name": "@bksp/style-guide",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reusable style guide configurations",
   "author": "B4CKSP4CE Team & Contributors <info@0x08.in>",
   "license": "MPL-2.0",
@@ -24,7 +24,8 @@
     "./eslint/node": {
       "import": "./eslint/node.mjs"
     },
-    "./typescript": "./typescript/tsconfig.json"
+    "./typescript": "./typescript/tsconfig.json",
+    "./commitlint": "./.commitlintrc.mjs"
   },
   "files": [
     "typescript",
