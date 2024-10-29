@@ -1,0 +1,62 @@
+{
+  "name": "@bksp/style-guide",
+  "version": "0.1.0",
+  "description": "Reusable style guide configurations",
+  "author": "B4CKSP4CE Team & Contributors <info@0x08.in>",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b4ck5p4c3/style-guide.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "bksp",
+    "0x08",
+    "styleguide"
+  ],
+  "exports": {
+    "./eslint/next": {
+      "import": "./eslint/next.mjs"
+    },
+    "./eslint/node": {
+      "import": "./eslint/node.mjs"
+    },
+    "./typescript": "./typescript/tsconfig.json"
+  },
+  "files": [
+    "typescript",
+    "eslint",
+    ".commitlintrc.mjs"
+  ],
+  "peerDependencies": {
+    "@next/eslint-plugin-next": "^15",
+    "eslint": "^9",
+    "typescript-eslint": "^8"
+  },
+  "peerDependenciesMeta": {
+    "@next/eslint-plugin-next": {
+      "optional": false
+    },
+    "eslint": {
+      "optional": false
+    },
+    "typescript-eslint": {
+      "optional": false
+    }
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "eslint-plugin-perfectionist": "^3.9.1",
+    "neostandard": "^0.11.7"
+  },
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "husky": "^9.1.6"
+  }
+}
