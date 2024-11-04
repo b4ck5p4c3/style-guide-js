@@ -27,7 +27,6 @@
     "./commitlint": "./.commitlintrc.mjs"
   },
   "files": [
-    "typescript",
     "eslint",
     ".commitlintrc.mjs"
   ],
