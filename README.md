@@ -50,17 +50,11 @@ Read more about it in [Configuring ESLint](https://eslint.org/docs/latest/use/co
 
 ## TypeScript
 
-This style guide includes a TypeScript configuration snippet, providing basic constraints for TypeScript projects.
-Notice that it isn't a full `tsconfig.json` file, but rather a set of rules to be extended in your project's `tsconfig.json`.
-
-For now, this configuration is matching the [`@tsconfig/strictest`](https://www.npmjs.com/package/@tsconfig/strictest) package.
-However, we might adjust it in the future to better fit our needs.
-
-To use the shared TypeScript config, you need to extend it in your `tsconfig.json` file:
+Please use [`@tsconfig/strictest`](https://www.npmjs.com/package/@tsconfig/strictest) directly in your projects:
 
 ```json
 {
-  "extends": "@bksp/style-guide/typescript"
+  "extends": "@tsconfig/strictest"
 }
 ```
 

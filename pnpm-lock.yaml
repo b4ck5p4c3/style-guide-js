@@ -17,9 +17,6 @@ importers:
       '@next/eslint-plugin-next':
         specifier: ^15
         version: 15.0.2
-      '@tsconfig/strictest':
-        specifier: ^2.0.5
-        version: 2.0.5
       eslint:
         specifier: ^9
         version: 9.13.0(jiti@1.21.6)
@@ -192,9 +189,6 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.40.0'
-
-  '@tsconfig/strictest@2.0.5':
-    resolution: {integrity: sha512-ec4tjL2Rr0pkZ5hww65c+EEPYwxOi4Ryv+0MtjeaSQRJyq322Q27eOQiFbuNgw2hpL4hB1/W/HBGk3VKS43osg==}
 
   '@types/conventional-commits-parser@5.0.0':
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
@@ -1553,8 +1547,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
-
-  '@tsconfig/strictest@2.0.5': {}
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
