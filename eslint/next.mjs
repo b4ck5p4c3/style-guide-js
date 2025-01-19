@@ -1,7 +1,7 @@
 import { FlatCompat } from '@eslint/eslintrc'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
-import path from 'path'
-import { fileURLToPath } from 'url'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 import base from './base.mjs'
 

@@ -22,6 +22,24 @@ Install the package using your package manager of choice:
 pnpm install --save-dev @bksp/style-guide
 ```
 
+## Editorconfig
+
+The `.editorconfig` file is a simple way to enforce consistent coding styles across various editors and IDEs.
+It is recommended to use the following configuration:
+
+```ini
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{js,jsx,cjs,mjs,ts,tsx,json,yml,yaml,env}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+```
+
 ## ESLint
 
 > Note: ESLint is a peer-dependency of this package, and should be installed
@@ -81,5 +99,5 @@ echo "pnpm dlx commitlint --edit \$1" > .husky/commit-msg
 
 ## Credits
 
-This project is heavily inspired by [The Vercel Style Guide](https://github.com/vercel/style-guide).
-Thanks, Vercel, for sharing this amazing piece of work!
+This project was initially inspired by [Vercel Style Guide](https://github.com/vercel/style-guide).
+Thanks for sharing this amazing piece of work!

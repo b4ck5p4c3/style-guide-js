@@ -1,6 +1,6 @@
 {
   "name": "@bksp/style-guide",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Reusable style guide configurations",
   "author": "B4CKSP4CE Team & Contributors <info@0x08.in>",
   "license": "MPL-2.0",
@@ -47,14 +47,15 @@
     }
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^19.5.0",
-    "@eslint/eslintrc": "^3.1.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/eslintrc": "^3.2.0",
     "eslint-plugin-perfectionist": "^3.9.1",
-    "neostandard": "^0.11.7"
+    "eslint-plugin-unicorn": "^56.0.1",
+    "neostandard": "^0.11.9"
   },
   "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "husky": "^9.1.6"
+    "@commitlint/cli": "^19.6.1",
+    "husky": "^9.1.7"
   }
 }
