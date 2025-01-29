@@ -2,6 +2,7 @@ import { FlatCompat } from '@eslint/eslintrc'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { config } from 'typescript-eslint'
 
 import base from './base.mjs'
 
@@ -19,12 +20,8 @@ const neo = neostandard({
   ts: true,
 })
 
-/**
- * @type {import('eslint').Linter.Config}
- */
-export default [
-  ...neo,
-  ...base,
-  ...compat.extends('plugin:@next/next/recommended'),
-  ...compat.extends('plugin:@next/next/core-web-vitals')
-]
+export default config(
+  neo,
+  base,
+  compat.config('plugin:@next/next/recommended')
+)

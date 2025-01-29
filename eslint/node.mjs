@@ -1,5 +1,5 @@
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
-import tseslint from 'typescript-eslint'
+import { config } from 'typescript-eslint'
 
 import base from './base.mjs'
 
@@ -9,7 +9,7 @@ const neo = neostandard({
   ts: true,
 })
 
-export default tseslint.config(
-  ...base,
-  ...neo
+export default config(
+  base,
+  neo
 )
