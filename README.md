@@ -13,7 +13,6 @@ The following configs are available, and are designed to be used together.
 
 - [ESLint](#eslint)
 - [TypeScript](#typescript)
-- [Commitlint](#commitlint)
 
 Install the package using your package manager of choice:
 
@@ -78,24 +77,12 @@ Please use [`@tsconfig/strictest`](https://www.npmjs.com/package/@tsconfig/stric
 
 ## Commitlint
 
-Commitlint is a linting tool for commit messages.
-We use it to enforce a consistent use of [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+> [!NOTE]
+> Use whatever style you prefer, but **be consistent**.
+> We may suggest using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-In order to use the shared Commitlint config, you need to install the following packages:
-
-```sh
-# Install commitlint and husky for git hooks
-pnpm install --save-dev @commitlint/cli husky
-
-# Link the shared config
-echo "export default { extends: ['@bksp/style-guide/commitlint'] }" > .commitlintrc.mjs
-
-# Initialize husky
-pnpm husky init
-
-# Add a commit-msg hook
-echo "pnpm dlx commitlint --edit \$1" > .husky/commit-msg
-```
+Previously, we enforced Conventional Commits with hooks and commitlint.
+This are long gone.
 
 ## Credits
 
