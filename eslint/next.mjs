@@ -23,5 +23,5 @@ const neo = neostandard({
 export default config(
   neo,
   base,
-  compat.config('plugin:@next/next/recommended')
+  ...compat.config('plugin:@next/next/recommended')
 )
