@@ -13,6 +13,7 @@ The following configs are available, and are designed to be used together.
 
 - [ESLint](#eslint)
 - [TypeScript](#typescript)
+- [ClangFormat](#clangformat)
 
 Install the package using your package manager of choice:
 
@@ -74,6 +75,12 @@ Please use [`@tsconfig/strictest`](https://www.npmjs.com/package/@tsconfig/stric
   "extends": "@tsconfig/strictest"
 }
 ```
+
+## ClangFormat
+
+Please use Google C/C++ code style.
+
+You can copy `.clang-format` file from this repo to your project, and setup your IDE to use it (by default VSCode and CLion use or advertise to use it if it is present).
 
 ## Commitlint
 
