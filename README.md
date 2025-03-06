@@ -23,21 +23,8 @@ pnpm install --save-dev @bksp/style-guide
 
 ## Editorconfig
 
-The `.editorconfig` file is a simple way to enforce consistent coding styles across various editors and IDEs.
-It is recommended to use the following configuration:
-
-```ini
-root = true
-
-[*]
-end_of_line = lf
-insert_final_newline = true
-
-[*.{js,jsx,cjs,mjs,ts,tsx,json,yml,yaml,env}]
-charset = utf-8
-indent_style = space
-indent_size = 2
-```
+Editorconfig enforcing consistent coding styles across various editors and IDEs.
+Copy the [.editorconfig](.editorconfig) file to the root of your project.
 
 ## ESLint
 
@@ -51,15 +38,14 @@ pnpm install --save-dev eslint typescript-eslint
 
 There are two ESLint configurations available:
 
-- `@bksp/style-guide/eslint/node` - for generic Node.js projects
+- `@bksp/style-guide/eslint/node` - for generic JS/TS projects
 - `@bksp/style-guide/eslint/next` - for Next.js projects
 
 Re-export the desired configuration in your project's `eslint.config.mjs` file:
 
 ```js
 // eslint.config.mjs
-import next from '@bksp/style-guide/eslint/next'
-export default next;
+export { default } from '@bksp/style-guide/eslint/next'
 ```
 
 You can extend this configuration to add project-specific rules.
@@ -67,24 +53,23 @@ Read more about it in [Configuring ESLint](https://eslint.org/docs/latest/use/co
 
 ## TypeScript
 
-Please use [`@tsconfig/strictest`](https://www.npmjs.com/package/@tsconfig/strictest) directly in your projects:
+Extend your `tsconfig.json` file with the shared TypeScript config:
 
 ```json
 {
-  "extends": "@tsconfig/strictest"
+  "extends": "@bksp/style-guide/tsconfig"
 }
 ```
 
-## Commitlint
+## Commit messages
 
-> [!NOTE]
-> Use whatever style you prefer, but **be consistent**.
-> We may suggest using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+Use whatever style you prefer, but **be consistent**.
+We encourage you to use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-Previously, we enforced Conventional Commits with hooks and commitlint.
-This are long gone.
+Example:
 
-## Credits
+```plaintext
+feat(recognition): add Digikey PN recognition (#123)
 
-This project was initially inspired by [Vercel Style Guide](https://github.com/vercel/style-guide).
-Thanks for sharing this amazing piece of work!
+fix: incorrect part number recognition
+```

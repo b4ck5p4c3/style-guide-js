@@ -22,10 +22,14 @@
     },
     "./eslint/node": {
       "import": "./eslint/node.mjs"
+    },
+    "./tsconfig": {
+      "default": "./typescript/tsconfig.json"
     }
   },
   "files": [
-    "eslint"
+    "eslint",
+    "ts"
   ],
   "peerDependencies": {
     "@next/eslint-plugin-next": "^15",
@@ -44,7 +48,8 @@
     }
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/eslintrc": "^3.3.0",
+    "@tsconfig/strictest": "^2.0.5",
     "eslint-plugin-perfectionist": "^3.9.1",
     "eslint-plugin-unicorn": "^56.0.1",
     "neostandard": "^0.11.9"
