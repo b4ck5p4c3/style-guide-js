@@ -29,7 +29,7 @@
   },
   "files": [
     "eslint",
-    "ts"
+    "typescript"
   ],
   "peerDependencies": {
     "@next/eslint-plugin-next": "^15",
