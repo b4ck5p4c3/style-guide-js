@@ -22,6 +22,9 @@
     },
     "./eslint/node": {
       "import": "./eslint/node.mjs"
+    },
+    "./ts": {
+      "default": "./ts/tsconfig.json"
     }
   },
   "files": [

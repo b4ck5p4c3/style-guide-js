@@ -3,6 +3,6 @@
   "_version": "2.0.0",
   "extends": "@tsconfig/strictest",
   "compilerOptions": {
-    "noPropertyAccessFromIndexSignature": false,
-  },
+    "noPropertyAccessFromIndexSignature": false
+  }
 }
