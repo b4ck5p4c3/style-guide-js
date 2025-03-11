@@ -14,7 +14,14 @@ export default tseslint.config(
   {
     rules: {
       // Increase line length a little bit
-      '@stylistic/max-len': ['error', { code: 120, ignoreComments: true }],
+      '@stylistic/max-len': ['error', {
+        code: 120,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+      }],
 
       // That's simply not applicable.
       'unicorn/no-null': 'off',
