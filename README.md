@@ -57,7 +57,7 @@ Extend your `tsconfig.json` file with the shared TypeScript config:
 
 ```json
 {
-  "extends": "@bksp/style-guide"
+  "extends": "@bksp/style-guide/ts"
 }
 ```
 
