@@ -23,6 +23,9 @@ importers:
       eslint-plugin-perfectionist:
         specifier: ^3.9.1
         version: 3.9.1(eslint@9.27.0(jiti@2.4.2))(typescript@5.6.3)
+      eslint-plugin-react-hooks:
+        specifier: ^5.2.0
+        version: 5.2.0(eslint@9.27.0(jiti@2.4.2))
       eslint-plugin-unicorn:
         specifier: ^56.0.1
         version: 56.0.1(eslint@9.27.0(jiti@2.4.2))
@@ -32,10 +35,6 @@ importers:
       typescript-eslint:
         specifier: ^8
         version: 8.32.1(eslint@9.27.0(jiti@2.4.2))(typescript@5.6.3)
-    devDependencies:
-      eslint-plugin-react-hooks:
-        specifier: ^5.2.0
-        version: 5.2.0(eslint@9.27.0(jiti@2.4.2))
 
 packages:
 
