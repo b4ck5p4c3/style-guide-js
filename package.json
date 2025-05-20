@@ -23,6 +23,9 @@
     "./eslint/node": {
       "import": "./eslint/node.mjs"
     },
+    "./eslint/react": {
+      "import": "./eslint/react.mjs"
+    },
     "./ts": {
       "default": "./ts/tsconfig.json"
     }
