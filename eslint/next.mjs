@@ -1,8 +1,8 @@
 import { FlatCompat } from '@eslint/eslintrc'
+import { defineConfig } from 'eslint/config'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { config } from 'typescript-eslint'
 
 import base from './base.mjs'
 
@@ -20,7 +20,7 @@ const neo = neostandard({
   ts: true,
 })
 
-export default config(
+export default defineConfig(
   neo,
   base,
   ...compat.extends('plugin:@next/next/recommended')

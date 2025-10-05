@@ -18,7 +18,7 @@ Install the package using your package manager of choice:
 
 ```sh
 # Using pnpm
-pnpm install --save-dev @bksp/style-guide
+pnpm install --save-dev @bksp/style-guide eslint
 ```
 
 ## Editorconfig
@@ -30,11 +30,6 @@ Copy the [.editorconfig](.editorconfig) file to the root of your project.
 
 > Note: ESLint is a peer-dependency of this package, and should be installed
 > at the root of your project.
-
-```sh
-# Install ESLint and TypeScript ESLint parser required for the shared config
-pnpm install --save-dev eslint typescript-eslint
-```
 
 There are two ESLint configurations available:
 

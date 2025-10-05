@@ -1,10 +1,11 @@
+import { defineConfig } from 'eslint/config'
 import perfectionist from 'eslint-plugin-perfectionist'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
-import tseslint from 'typescript-eslint'
+import { plugins } from 'neostandard'
 
-export default tseslint.config(
+export default defineConfig(
   // Enable TypeScript linting.
-  tseslint.configs.strict,
+  plugins['typescript-eslint'].configs.strict,
 
   // Sort imports in a natural order.
   perfectionist.configs['recommended-natural'],

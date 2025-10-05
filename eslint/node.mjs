@@ -1,5 +1,5 @@
+import { defineConfig } from 'eslint/config'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
-import { config } from 'typescript-eslint'
 
 import base from './base.mjs'
 
@@ -9,7 +9,7 @@ const neo = neostandard({
   ts: true,
 })
 
-export default config(
+export default defineConfig(
   base,
   neo
 )

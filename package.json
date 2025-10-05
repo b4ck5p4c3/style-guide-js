@@ -27,7 +27,7 @@
       "import": "./eslint/react.mjs"
     },
     "./ts": {
-      "default": "./ts/tsconfig.json"
+      "default": "./typescript/tsconfig.json"
     }
   },
   "files": [
@@ -36,8 +36,7 @@
   ],
   "peerDependencies": {
     "@next/eslint-plugin-next": "^15",
-    "eslint": "^9",
-    "typescript-eslint": "^8"
+    "eslint": "^9"
   },
   "peerDependenciesMeta": {
     "@next/eslint-plugin-next": {
@@ -52,7 +51,7 @@
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@tsconfig/strictest": "^2.0.5",
+    "@tsconfig/strictest": "^2.0.6",
     "eslint-plugin-perfectionist": "^3.9.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-unicorn": "^56.0.1",
