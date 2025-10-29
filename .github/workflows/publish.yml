@@ -21,4 +21,4 @@ jobs:
           node-version: "24"
           registry-url: "https://registry.npmjs.org"
       - name: Publish
-        run: pnpm publish
+        run: pnpm publish --no-git-checks
