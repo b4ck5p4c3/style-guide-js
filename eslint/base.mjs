@@ -1,6 +1,6 @@
-import { defineConfig } from 'eslint/config'
 import perfectionist from 'eslint-plugin-perfectionist'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
+import { defineConfig } from 'eslint/config'
 import { plugins } from 'neostandard'
 
 export default defineConfig(
@@ -11,7 +11,7 @@ export default defineConfig(
   perfectionist.configs['recommended-natural'],
 
   // Enable the recommended Unicorn rules.
-  eslintPluginUnicorn.configs['flat/recommended'],
+  eslintPluginUnicorn.configs['recommended'],
   {
     rules: {
       // Increase line length a little bit
@@ -23,6 +23,11 @@ export default defineConfig(
         ignoreTrailingComments: true,
         ignoreUrls: true,
       }],
+
+      // Allow use of void operator as a statement.
+      // This is useful for highlighting side effects of expressions,
+      // such as promises that are intentionally not awaited.
+      'no-void': ['error', { allowAsStatement: true }],
 
       // That's simply not applicable.
       'unicorn/no-null': 'off',

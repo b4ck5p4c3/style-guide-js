@@ -16,6 +16,9 @@
     "styleguide"
   ],
   "exports": {
+    "./eslint/base": {
+      "import": "./eslint/base.mjs"
+    },
     "./eslint/next": {
       "import": "./eslint/next.mjs"
     },
@@ -34,27 +37,23 @@
     "typescript"
   ],
   "peerDependencies": {
-    "@next/eslint-plugin-next": "^15",
-    "eslint": "^9"
+    "eslint": "^9",
+    "eslint-config-next": ">=15"
   },
   "peerDependenciesMeta": {
-    "@next/eslint-plugin-next": {
-      "optional": false
-    },
     "eslint": {
       "optional": false
     },
-    "typescript-eslint": {
-      "optional": false
+    "eslint-config-next": {
+      "optional": true
     }
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@tsconfig/strictest": "^2.0.8",
-    "eslint-plugin-perfectionist": "^3.9.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-unicorn": "^56.0.1",
-    "neostandard": "^0.11.9"
+    "eslint-plugin-perfectionist": "^5.5.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-unicorn": "^63.0.0",
+    "neostandard": "^0.12.2"
   },
-  "packageManager": "pnpm@10.24.0"
+  "packageManager": "pnpm@10.29.3"
 }

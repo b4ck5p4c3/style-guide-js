@@ -1,18 +1,8 @@
-import { FlatCompat } from '@eslint/eslintrc'
+import nextVitals from 'eslint-config-next/core-web-vitals'
 import { defineConfig } from 'eslint/config'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 
 import base from './base.mjs'
-
-// mimic CommonJS variables -- not needed if using CommonJS
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname
-})
 
 const neo = neostandard({
   env: ['node', 'browser'],
@@ -23,5 +13,5 @@ const neo = neostandard({
 export default defineConfig(
   neo,
   base,
-  ...compat.extends('plugin:@next/next/recommended')
+  ...nextVitals
 )

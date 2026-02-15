@@ -19,6 +19,9 @@ Install the package using your package manager of choice:
 ```sh
 # Using pnpm
 pnpm install --save-dev @bksp/style-guide eslint
+
+# For Next.js, also install the Next.js ESLint plugin
+pnpm install --save-dev eslint-config-next
 ```
 
 ## Editorconfig
@@ -31,10 +34,12 @@ Copy the [.editorconfig](.editorconfig) file to the root of your project.
 > Note: ESLint is a peer-dependency of this package, and should be installed
 > at the root of your project.
 
-There are two ESLint configurations available:
+There are multiple ESLint configurations available:
 
+- `@bksp/style-guide/eslint/base` - base rules without environment-specific settings
 - `@bksp/style-guide/eslint/node` - for generic JS/TS projects
-- `@bksp/style-guide/eslint/next` - for Next.js projects
+- `@bksp/style-guide/eslint/nest` - for Nest
+- `@bksp/style-guide/eslint/next` - for Next
 
 Re-export the desired configuration in your project's `eslint.config.mjs` file:
 

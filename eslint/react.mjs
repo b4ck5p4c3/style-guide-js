@@ -1,5 +1,5 @@
-import { defineConfig } from 'eslint/config'
 import reactHooks from 'eslint-plugin-react-hooks'
+import { defineConfig } from 'eslint/config'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
 
 import base from './base.mjs'
