@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@tsconfig/strictest':
-        specifier: ^2.0.8
-        version: 2.0.8
       eslint:
         specifier: ^9
         version: 9.39.2(jiti@2.4.2)
@@ -215,9 +212,6 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.40.0'
-
-  '@tsconfig/strictest@2.0.8':
-    resolution: {integrity: sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==}
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -1864,8 +1858,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
-
-  '@tsconfig/strictest@2.0.8': {}
 
   '@tybys/wasm-util@0.10.1':
     dependencies:

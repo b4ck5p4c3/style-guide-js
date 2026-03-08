@@ -49,7 +49,6 @@
     }
   },
   "dependencies": {
-    "@tsconfig/strictest": "^2.0.8",
     "eslint-plugin-perfectionist": "^5.5.0",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-unicorn": "^63.0.0",
