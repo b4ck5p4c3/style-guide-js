@@ -18,7 +18,7 @@ Install the package using your package manager of choice:
 
 ```sh
 # Using pnpm
-pnpm install --save-dev @bksp/style-guide eslint
+pnpm install --save-dev @bksp/style-guide eslint@9
 
 # For Next.js, also install the Next.js ESLint plugin
 pnpm install --save-dev eslint-config-next
