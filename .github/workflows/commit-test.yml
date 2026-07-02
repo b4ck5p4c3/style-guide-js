@@ -1,0 +1,13 @@
+name: Lint & Test on Commit
+
+on:
+  push:
+    branches:
+      - '*'
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    uses: ./.github/workflows/tests.yml
