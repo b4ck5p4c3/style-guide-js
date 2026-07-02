@@ -1,34 +1,34 @@
 {
   "name": "@bksp/style-guide",
-  "version": "1.5.0",
   "description": "Reusable style guide configurations",
+  "version": "1.5.0",
   "author": "B4CKSP4CE Team & Contributors <info@0x08.in>",
-  "license": "MPL-2.0",
-  "repository": {
-    "url": "https://github.com/b4ck5p4c3/style-guide-js"
+  "dependencies": {
+    "eslint-plugin-perfectionist": "^5.9.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-you-might-not-need-an-effect": "^1.0.1",
+    "eslint-plugin-unicorn": "^69.0.0",
+    "neostandard": "^0.13.0"
   },
-  "scripts": {
-    "lint": "eslint ."
-  },
-  "keywords": [
-    "bksp",
-    "0x08",
-    "styleguide"
-  ],
   "exports": {
     "./eslint/base": {
+      "types": "./eslint/config.d.ts",
       "import": "./eslint/base.mjs"
     },
     "./eslint/next": {
+      "types": "./eslint/config.d.ts",
       "import": "./eslint/next.mjs"
     },
     "./eslint/node": {
+      "types": "./eslint/config.d.ts",
       "import": "./eslint/node.mjs"
     },
     "./eslint/react": {
+      "types": "./eslint/config.d.ts",
       "import": "./eslint/react.mjs"
     },
     "./eslint/nest": {
+      "types": "./eslint/config.d.ts",
       "import": "./eslint/nest.mjs"
     },
     "./typescript": {
@@ -39,8 +39,15 @@
     "eslint",
     "typescript"
   ],
+  "keywords": [
+    "0x08",
+    "bksp",
+    "styleguide"
+  ],
+  "license": "MPL-2.0",
+  "packageManager": "pnpm@11.9.0",
   "peerDependencies": {
-    "eslint": "^9",
+    "eslint": "^9.39.2",
     "eslint-config-next": ">=15"
   },
   "peerDependenciesMeta": {
@@ -51,11 +58,13 @@
       "optional": true
     }
   },
-  "dependencies": {
-    "eslint-plugin-perfectionist": "^5.8.0",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-unicorn": "^64.0.0",
-    "neostandard": "^0.13.0"
+  "repository": {
+    "url": "https://github.com/b4ck5p4c3/style-guide-js"
   },
-  "packageManager": "pnpm@10.31.0"
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2"
+  }
 }
