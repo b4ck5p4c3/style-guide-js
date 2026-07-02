@@ -4,7 +4,7 @@ import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
 import base from './base.mjs'
 
 const neo = neostandard({
-  env: ['node', 'nodeBuiltin'],
+  env: ['node'],
   ignores: resolveIgnoresFromGitignore(),
   ts: true,
 })
