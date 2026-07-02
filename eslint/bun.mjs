@@ -1,19 +1,15 @@
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactYouMightNotNeedAnEffect from 'eslint-plugin-react-you-might-not-need-an-effect'
 import { defineConfig } from 'eslint/config'
 import neostandard, { resolveIgnoresFromGitignore } from 'neostandard'
 
 import base from './base.mjs'
 
 const neo = neostandard({
-  env: ['browser'],
+  env: ['node', 'bunBuiltin'],
   ignores: resolveIgnoresFromGitignore(),
   ts: true,
 })
 
 export default defineConfig(
-  neo,
   base,
-  reactHooks.configs.flat['recommended-latest'],
-  reactYouMightNotNeedAnEffect.configs.strict
+  neo
 )

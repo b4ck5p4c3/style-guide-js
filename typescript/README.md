@@ -2,4 +2,4 @@
 
 ## tsconfig
 
-Extends from the `@tsconfig/strictest`, preserving almost all rules with minor overrides.
+Modeled after `@tsconfig/strictest`, manually mirroring almost all of its rules with minor overrides.

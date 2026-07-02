@@ -7,6 +7,18 @@ export default defineConfig(
   // Enable TypeScript linting.
   plugins['typescript-eslint'].configs.strict,
 
+  // Perform type-aware linting for TypeScript files.
+  // This is done via projectService, and requires a tsconfig.json file to be present in the project root.
+  {
+    extends: [plugins['typescript-eslint'].configs.strictTypeChecked],
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
+    },
+  },
+
   // Sort imports in a natural order.
   perfectionist.configs['recommended-natural'],
 
@@ -29,12 +41,15 @@ export default defineConfig(
       // such as promises that are intentionally not awaited.
       'no-void': ['error', { allowAsStatement: true }],
 
+      // Don't enforce neither approach of logical assignment operators
+      'unicorn/logical-assignment-operators': 'off',
+
       // That's simply not applicable.
       'unicorn/no-null': 'off',
 
       // It's quite rare to use process.exit, and most of
       // the time it's used in CLI tools where it's expected.
-      'unicorn/no-process-exit': 'off'
+      'unicorn/no-process-exit': 'off',
     }
   }
 )

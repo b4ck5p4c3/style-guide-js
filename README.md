@@ -36,10 +36,17 @@ Copy the [.editorconfig](.editorconfig) file to the root of your project.
 
 There are multiple ESLint configurations available:
 
-- `@bksp/style-guide/eslint/base` - base rules without environment-specific settings
-- `@bksp/style-guide/eslint/node` - for generic JS/TS projects
+**Ready to use:**
+
+- `@bksp/style-guide/eslint/node` - for Node
 - `@bksp/style-guide/eslint/nest` - for Nest
 - `@bksp/style-guide/eslint/next` - for Next
+- `@bksp/style-guide/eslint/react` - for React
+
+**Skeleton:**
+
+- `@bksp/style-guide/eslint/base` - base config for all projects.
+  Must be extended at least with `@stylistic` plugin before use.
 
 Re-export the desired configuration in your project's `eslint.config.mjs` file:
 
