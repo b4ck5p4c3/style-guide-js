@@ -70,7 +70,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "node --test tests/*.test.mts"
+    "test": "TSESTREE_SINGLE_RUN=false node --test tests/*.test.mts"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
