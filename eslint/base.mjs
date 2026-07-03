@@ -36,6 +36,20 @@ export default defineConfig(
         ignoreUrls: true,
       }],
 
+      // Allow using everything but objects in template literals.
+      '@typescript-eslint/restrict-template-expressions': [
+        'error',
+        {
+          allowAny: true,
+          allowArray: true,
+          allowBoolean: true,
+          allowNever: true,
+          allowNullish: true,
+          allowNumber: true,
+          allowRegExp: true,
+        }
+      ],
+
       // Allow use of void operator as a statement.
       // This is useful for highlighting side effects of expressions,
       // such as promises that are intentionally not awaited.
