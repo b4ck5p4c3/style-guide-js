@@ -17,6 +17,22 @@ export default defineConfig(
         projectService: true,
       },
     },
+
+    rules: {
+      // Allow using everything but objects in template literals.
+      '@typescript-eslint/restrict-template-expressions': [
+        'error',
+        {
+          allowAny: true,
+          allowArray: true,
+          allowBoolean: true,
+          allowNever: true,
+          allowNullish: true,
+          allowNumber: true,
+          allowRegExp: true,
+        }
+      ],
+    }
   },
 
   // Sort imports in a natural order.
@@ -35,20 +51,6 @@ export default defineConfig(
         ignoreTrailingComments: true,
         ignoreUrls: true,
       }],
-
-      // Allow using everything but objects in template literals.
-      '@typescript-eslint/restrict-template-expressions': [
-        'error',
-        {
-          allowAny: true,
-          allowArray: true,
-          allowBoolean: true,
-          allowNever: true,
-          allowNullish: true,
-          allowNumber: true,
-          allowRegExp: true,
-        }
-      ],
 
       // Allow use of void operator as a statement.
       // This is useful for highlighting side effects of expressions,
