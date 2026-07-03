@@ -1,7 +1,7 @@
 {
   "name": "@bksp/style-guide",
   "description": "Reusable style guide configurations",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": "B4CKSP4CE Team & Contributors <info@0x08.in>",
   "dependencies": {
     "eslint-plugin-perfectionist": "^5.9.1",
