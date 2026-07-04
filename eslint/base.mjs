@@ -57,6 +57,9 @@ export default defineConfig(
       // such as promises that are intentionally not awaited.
       'no-void': ['error', { allowAsStatement: true }],
 
+      // Conflicts with the perfectionist's class ordering rule
+      'unicorn/consistent-class-member-order': 'off',
+
       // Don't enforce neither approach of logical assignment operators
       'unicorn/logical-assignment-operators': 'off',
 
