@@ -4,10 +4,10 @@
   "version": "1.8.1",
   "author": "B4CKSP4CE Team & Contributors <info@0x08.in>",
   "dependencies": {
-    "eslint-plugin-perfectionist": "^5.9.1",
+    "eslint-plugin-perfectionist": "^5.10.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-you-might-not-need-an-effect": "^1.0.1",
-    "eslint-plugin-unicorn": "^69.0.0",
+    "eslint-plugin-unicorn": "^73.0.0",
     "neostandard": "^0.13.0"
   },
   "exports": {
@@ -49,7 +49,7 @@
     "styleguide"
   ],
   "license": "MPL-2.0",
-  "packageManager": "pnpm@11.9.0",
+  "packageManager": "pnpm@11.22.0",
   "engines": {
     "node": ">=22"
   },
@@ -73,7 +73,7 @@
     "test": "TSESTREE_SINGLE_RUN=false node --test tests/*.test.mts"
   },
   "devDependencies": {
-    "@types/node": "^26.0.1",
+    "@types/node": "^26.2.0",
     "eslint": "^9.39.4",
     "typescript": "^5.9.3"
   }
