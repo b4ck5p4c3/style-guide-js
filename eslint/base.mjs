@@ -52,6 +52,9 @@ export default defineConfig(
         ignoreUrls: true,
       }],
 
+      // Allow fallthrough in switch statements, but only if the case is empty.
+      'no-fallthrough': ['error', { allowEmptyCase: true }],
+
       // Allow use of void operator as a statement.
       // This is useful for highlighting side effects of expressions,
       // such as promises that are intentionally not awaited.
@@ -68,7 +71,7 @@ export default defineConfig(
 
       // It's quite rare to use process.exit, and most of
       // the time it's used in CLI tools where it's expected.
-      'unicorn/no-process-exit': 'off',
+      'unicorn/no-process-exit': 'off'
     }
   }
 )
